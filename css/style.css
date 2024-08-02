@@ -202,12 +202,13 @@ p {
   }
   /* フッター */
   footer {
-    background-color: #0d0d0d;
+    background-color: #ccc;
     text-align: center;
     padding: 80px 80px 30px 80px;
   }
-  #footer-logo {
-    margin-bottom: 30px;
+  #footer-logo img {
+    width: 10%;
+    margin-bottom: 20px;
   }
   #footer-link {
     margin-bottom: 50px;
