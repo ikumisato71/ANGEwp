@@ -18,6 +18,7 @@ p {
   header {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
   }
   #logo {
     width: 30%;
@@ -53,23 +54,27 @@ p {
   #main-visual {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 50px;
   }
   #main-massage {
     color: #000;
-    width: 30%;
+    width: 40%;
+    position: relative;
   }
   #main-massage > h1 {
     font-size: 24px;
-    margin: 20px;
+    margin: 0px 30px 30px 30px;
   }
   #main-massage > p {
     font-size: 17px;
     margin: 30px;
   }
   #main-massage > img {
-    position: relative;
+    position: absolute;
     right: 0;
     bottom: 0;
+    width: 40%;
   }
 
   .main-photo-sweater {
@@ -77,10 +82,11 @@ p {
   }
 
   .main-photo-knit {
-    width: 70%;
+    width: 60%;
   }
   .main-photo-knit img {
-    padding: 50px 10px 20px 70px;
+    padding: 50px 10px 0px 20px;
+    width: 98%;
   }
   .index-h2 {
     font-size: 36px;
@@ -131,118 +137,130 @@ p {
     display: flex;
     justify-content: space-around;
   }
+  /* 展示会 */
   .exhibition-photo {
     display: flex;
     justify-content: space-around;
   }
-  .company-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .exhibition-photo1 {
+    position: relative;
+    z-index: 0;
   }
-  /* お問い合わせ */
-  #contact {
-    margin: 80px auto;
+  .exhibition-photo1 ::before {
+    content: url("images/waku.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
-  /* 外枠 */
-  #contact > form > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-  }
-  /* 左列の見出し */
-  .contact-heading {
-    width: 240px;
-    align-self: center;
-  }
-  /* 見出しのラベル */
-  .contact-label {
-    font-weight: bold;
-  }
-  /* 必須 */
-  .contact-span {
-    color: #ce2222;
-    margin: 0 0 0 20px;
-    font-weight: bold;
-  }
-  /* テキストボックス */
-  .contact-textbox {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: #707070;
-    border-bottom-style: solid;
-    background-color: #fafafa;
-    width: 400px;
-    height: 56px;
-  }
-  /* お問い合わせ内容のテキストエリア */
-  .contact-textarea {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: #707070;
-    border-bottom-style: solid;
-    background-color: #fafafa;
-    width: 400px;
-    height: 200px;
-  }
-  /* 個人情報の取り扱い */
-  details {
-    width: 700px;
-  }
-  details > div {
-    background-color: #fafafa;
-    padding: 20px;
-  }
-  details > div > span {
-    font-weight: bold;
-  }
-  /* フッター */
-  footer {
-    background-color: #ccc;
-    text-align: center;
-    padding: 80px 80px 30px 80px;
-  }
-  #footer-logo img {
-    width: 10%;
-    margin-bottom: 20px;
-  }
-  #footer-link {
-    margin-bottom: 50px;
-  }
-  #footer-link > a {
-    text-decoration: none;
-    margin: 10px;
-  }
-  #footer-link > a:link {
-    color: #fff;
-  }
-  #footer-link > a:visited {
-    color: #fff;
-  }
-  #footer-link > a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  #footer-link > a:active {
-    color: #fff;
-  }
-  #sns-copyright {
-    display: flex;
-    justify-content: space-between;
-  }
-  #sns-footer {
-    text-align: left;
-    width: 100%;
-  }
-  #sns-footer > a {
-    margin-right: 30px;
-  }
-  #copyright {
-    color: #fff;
-    width: 100%;
-  }
+}
+.company-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* お問い合わせ */
+#contact {
+  margin: 80px auto;
+}
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+/* 個人情報の取り扱い */
+details {
+  width: 700px;
+}
+details > div {
+  background-color: #fafafa;
+  padding: 20px;
+}
+details > div > span {
+  font-weight: bold;
+}
+/* フッター */
+footer {
+  background-color: #ccc;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+#footer-logo img {
+  width: 10%;
+  margin-bottom: 20px;
+}
+#footer-link {
+  margin-bottom: 50px;
+}
+#footer-link > a {
+  text-decoration: none;
+  margin: 10px;
+}
+#footer-link > a:link {
+  color: #fff;
+}
+#footer-link > a:visited {
+  color: #fff;
+}
+#footer-link > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#footer-link > a:active {
+  color: #fff;
+}
+#sns-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#sns-footer {
+  text-align: left;
+  width: 100%;
+}
+#sns-footer > a {
+  margin-right: 30px;
+}
+#copyright {
+  color: #fff;
+  width: 100%;
 }
