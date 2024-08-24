@@ -13,6 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <div class="loader">
+      <div class="loading_logo">
+        <img src="images/toplogo.gif" class="fadeUp" />
+      </div>
+    </div> -->
   </head>
 
   <body>
@@ -20,7 +25,8 @@
       <!--ロゴ -->
       <div id="logo">
         <a href="index.html"
-          ><img src="images/logo.png" alt="トップページへ戻る"
+          ><img src="images/logo.png" alt="トップページへ戻る" />
+          <img src="images/toplogo-ic.gif" alt="トップページへ戻る"
         /></a>
       </div>
       <!-- PC用ナビゲーション -->
@@ -130,18 +136,85 @@
             <div>
               <div class="production-img">
                 <div>
-                  <img
-                    class="production-photo"
-                    src="images/item1.jpg"
-                    alt="ニット"
-                  />
+                  <!-- モーダル -->
+                  <button class="button js-modal-button">
+                    <img
+                      class="production-photo"
+                      src="images/item1.jpg"
+                      alt="ニット"
+                    />
+                  </button>
+                  <div class="layer js-modal">
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <!-- 閉じるボタン追記 -->
+                        <div class="modal__button-wrap">
+                          <button class="close-button js-close-button">
+                            <span></span>
+                            <span></span>
+                          </button>
+                        </div>
+                        <div class="modal__contents">
+                          <div class="modal__content">
+                            <div>
+                              <img src="images/item1.jpg" />
+                            </div>
+                            <div>
+                              <p>
+                                刺繍ニット
+                                <br />
+                              </p>
+                                  袖に刺繍を施し、部分的にニットをくり抜きカットしています。
+                                <br />
+                                素材：VIS70%PBT30%
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
-                  <img
-                    class="production-photo"
-                    src="images/item2.jpg"
-                    alt="ニット"
-                  />
+                  <!-- モーダル -->
+                  <button class="button js-modal-button">
+                    <img
+                      class="production-photo"
+                      src="images/item2.jpg"
+                      alt="ニット"
+                    />
+                  </button>
+                  <div class="layer js-modal">
+                    <div class="modal">
+                      <div class="modal__inner">
+                        <!-- 閉じるボタン追記 -->
+                        <div class="modal__button-wrap">
+                          <button class="close-button js-close-button">
+                            <span></span>
+                            <span></span>
+                          </button>
+                        </div>
+                        <div class="modal__contents">
+                          <div class="modal__content">
+                            <div>
+                              <img src="images/item2.jpg" />
+                            </div>
+                            <div>
+                              <p>
+                                刺繍ニット
+                                <br />
+                              </p>
+                                  袖に刺繍を施し、部分的にニットをくり抜きカットしています。
+                                <br />
+                                素材：VIS70%PBT30%
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div>
                   <img
