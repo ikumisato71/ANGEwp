@@ -7,6 +7,7 @@ body {
 p {
   font-size: 15px;
   margin: 20px;
+  line-height: 1.8rem;
 }
 /* PC用スタイル */
 @media screen and (min-width: 768px) {
@@ -87,17 +88,21 @@ p {
   }
   #main-massage > img {
     position: absolute;
-    right: 0;
+    right: 10%;
     bottom: 0;
-    width: 40%;
+    width: 45%;
   }
 
   .main-photo-sweater {
-    width: 50%;
+    width: 70%;
     animation-name: fadeLeftAnime;
     animation-duration: 5s;
     animation-fill-mode: forwards;
     opacity: 0;
+  }
+
+  .main-photo-sweater {
+    width: 100%;
   }
 
   @keyframes fadeLeftAnime {
@@ -113,13 +118,12 @@ p {
   }
 
   .main-photo-knit {
-    width: 60%;
+    width: 70%;
   }
   .main-photo-knit img {
-    padding: 50px 10px 0px 20px;
-    width: 98%;
+    width: 100%;
     animation-name: fadeRightAnime;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-fill-mode: forwards;
     opacity: 0;
   }
@@ -136,16 +140,18 @@ p {
   }
   .index-h2 {
     font-size: 36px;
-    margin-top: 120px;
+    margin-top: 150px;
   }
 
   h3 {
     font-size: 24px;
-    margin: 20px;
+    margin: 30px;
+    line-height: 2.5rem;
   }
   #about__inner--top {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
   .about-text {
     width: 40%;
@@ -155,9 +161,11 @@ p {
   }
   #about-photo-seep {
     width: 50%;
+    margin-top: 50px;
   }
   #about-photo-knit {
     width: 70%;
+    margin-left: 80px;
   }
   #about__inner--end {
     display: flex;
@@ -170,34 +178,42 @@ p {
   #about-photo-clothes {
     width: 80%;
     margin-top: 200px;
+    margin-left: 50px;
   }
   #about-photo-girl {
     width: 100%;
-    margin-top: 30px;
   }
   #about-photo-pen {
     width: 70%;
-    margin-top: 100px;
+    margin-top: 180px;
+    margin-left: 30px;
   }
+  /* 制作 */
   .production-img {
     display: flex;
     justify-content: space-around;
+  }
+
+  #production-clothes,
+  #production-knit {
+    margin-top: 50px;
   }
   /* 展示会 */
   .exhibition-photo {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
   }
   .exhibition-photo1 {
     position: relative;
-    z-index: 0;
+
+    text-align: center;
   }
-  .exhibition-photo1 ::before {
-    content: url("images/waku.png");
+  .ex-photo_trim {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .company-wrapper {
@@ -309,4 +325,10 @@ footer {
 #copyright {
   color: #fff;
   width: 100%;
+}
+
+td,
+th {
+  line-height: 2.5rem;
+  padding-left: 30px;
 }
