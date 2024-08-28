@@ -530,3 +530,23 @@ th {
 .ex-photo img {
   width: 30%;
 }
+/* 展示会２０２２HTML */
+.ex-logo {
+  width: 100%;
+  margin-top: 100px;
+}
+.ex-logo h1 {
+  font-size: 36px;
+}
+.ex-logo img {
+  width: 5%;
+  margin: 20px;
+}
+.ex-photo {
+  width: 100%;
+  margin: 50px;
+  display: inline-block;
+  gap: 20px;
+}
+.ex-photo img {
+}
