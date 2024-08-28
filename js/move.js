@@ -1,5 +1,5 @@
 // layer要素に付与したjs-modalクラスを取得し変数に格納
-const modal = document.querySelector(".js-modal");
+const modal = document.querySelectorAll(".js-modal");
 // button要素に付与したjs-modal-buttonクラスを取得し、変数に格納
 const modalButton = document.querySelector(".js-modal-button");
 
