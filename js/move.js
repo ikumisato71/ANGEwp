@@ -44,7 +44,7 @@ setTimeout(() => {
   // 1秒後（opacityのトランジションが完了した後）、ローダーを完全に非表示にする
   setTimeout(() => {
     loader.style.display = "none";
-  }, 1500);
+  }, 1000);
 }, 2000);
 
 // ↑↑↑ レビュー ↑↑↑

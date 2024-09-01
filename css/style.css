@@ -10,63 +10,44 @@ p {
   line-height: 1.8rem;
 }
 /* PC用スタイル */
-@media screen and (min-width: 768px) {
-  .loader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 999;
-    inset: 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
+/* @media screen and (min-width: 768px) { */
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
 
-  .loading_logo img {
-    width: 200px;
-  }
+.loading_logo img {
+  width: 200px;
+}
 
-  .fadeUp {
-    animation-name: fadeUpAnime;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-
-  @keyframes fadeUpAnime {
-    from {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  body {
-    max-width: 1080px;
-    min-width: 960px;
-    margin: 0 auto;
-    position: relative;
-  }
-  header {
-    background-color: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  /* ーーーーーーーー */
-  /* 不具合 */
-  /* ーーーーーーーー */
-  /* .switch_image {
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* ーーーーーーーー */
+/* 不具合 */
+/* ーーーーーーーー */
+/* .switch_image {
     position: relative;
   }
 
@@ -88,502 +69,516 @@ p {
   .switch_image img {
     width: 50%;
   } */
-  #logo {
-    width: 30%;
-    padding: 10px;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  #logo img {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-  }
+#logo {
+  width: 30%;
+  padding: 10px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+#logo img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
 
-  #logo img:first-of-type {
-    visibility: visible; /* 通常時は1つ目の画像を表示する */
-    opacity: 1;
-  }
+#logo img:first-of-type {
+  visibility: visible; /* 通常時は1つ目の画像を表示する */
+  opacity: 1;
+}
 
-  #logo img:last-of-type {
-    visibility: hidden; /* 通常時は2つ目の画像を非表示にする */
-    opacity: 0;
-  }
+#logo img:last-of-type {
+  visibility: hidden; /* 通常時は2つ目の画像を非表示にする */
+  opacity: 0;
+}
 
-  #logo:hover img:first-of-type {
-    visibility: hidden; /* ホバー時に1つ目の画像を非表示にする */
-    opacity: 0;
-  }
+#logo:hover img:first-of-type {
+  visibility: hidden; /* ホバー時に1つ目の画像を非表示にする */
+  opacity: 0;
+}
 
-  #logo:hover img:last-of-type {
-    visibility: visible; /* ホバー時に2つ目の画像を表示する */
-    opacity: 1;
-  }
+#logo:hover img:last-of-type {
+  visibility: visible; /* ホバー時に2つ目の画像を表示する */
+  opacity: 1;
+}
 
-  #nav-pc {
-    font-size: 18px;
-    padding: 15px;
-  }
-  /* 親要素にdisplay: flex;をつけてあげるとgapが効くようになります */
-  nav {
-    display: flex;
-    gap: 20px;
-  }
+#nav-pc {
+  font-size: 18px;
+  padding: 15px;
+}
+/* 親要素にdisplay: flex;をつけてあげるとgapが効くようになります */
+nav {
+  display: flex;
+  gap: 20px;
+}
 
-  #nav-pc a {
-    text-decoration: none;
-    /* margin-left: 20px;
+#nav-pc a {
+  text-decoration: none;
+  /* margin-left: 20px;
 		gap: 20px; */
-  }
+}
 
-  #nav-pc a:link {
-    color: #0d0d0d;
-  }
-  #nav-pc a:visited {
-    color: #0d0d0d;
-  }
-  #nav-pc a:hover {
-    color: #ccc;
-    text-decoration: underline;
-  }
-  #nav-pc a:active {
-    color: #0d0d0d;
-  }
-  main {
-    margin-top: 200px;
-  }
-  #main-visual {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 35px;
-    margin-bottom: 50px;
-  }
-  #main-massage {
-    color: #000;
-    width: 40%;
-    position: relative;
-    width: 50%;
-    animation-name: fadeInAnime;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  @keyframes fadeInAnime {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  #main-massage > h1 {
-    font-size: 24px;
-    margin: 0px 30px 30px 30px;
-  }
-  #main-massage > p {
-    font-size: 17px;
-    margin: 30px;
-  }
-  #main-massage > img {
-    position: absolute;
-    right: 10%;
-    bottom: 0;
-    width: 45%;
-  }
-
-  .main-photo-sweater {
-    width: 70%;
-    animation-name: fadeLeftAnime;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+#nav-pc a:link {
+  color: #0d0d0d;
+}
+#nav-pc a:visited {
+  color: #0d0d0d;
+}
+#nav-pc a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+#nav-pc a:active {
+  color: #0d0d0d;
+}
+main {
+  margin-top: 200px;
+}
+#main-visual {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+#main-massage {
+  color: #000;
+  width: 40%;
+  position: relative;
+  width: 50%;
+  animation-name: fadeInAnime;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeInAnime {
+  from {
     opacity: 0;
   }
 
-  .main-photo-sweater {
-    width: 100%;
+  to {
+    opacity: 1;
   }
+}
 
-  @keyframes fadeLeftAnime {
-    from {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
+#main-massage > h1 {
+  font-size: 24px;
+  margin: 0px 30px 30px 30px;
+}
+#main-massage > p {
+  font-size: 17px;
+  margin: 30px;
+}
+#main-massage > img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 45%;
+}
 
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+.main-photo-sweater {
+  width: 70%;
+  animation-name: fadeLeftAnime;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
 
-  .main-photo-knit {
-    width: 70%;
-  }
-  .main-photo-knit img {
-    width: 100%;
-    animation-name: fadeRightAnime;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
+.main-photo-sweater {
+  width: 100%;
+}
+
+@keyframes fadeLeftAnime {
+  from {
     opacity: 0;
-  }
-  @keyframes fadeRightAnime {
-    from {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .index-h2 {
-    font-size: 36px;
-    margin-top: 150px;
+    transform: translateX(-100px);
   }
 
-  h3 {
-    font-size: 24px;
-    margin: 30px;
-    line-height: 2.5rem;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  #about__inner--top {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-  }
-  .about-text {
-    width: 40%;
-  }
-  .about-photo {
-    width: 60%;
-  }
-  #about-photo-seep {
-    width: 50%;
-    margin-top: 50px;
-  }
-  #about-photo-knit {
-    width: 70%;
-    margin-left: 80px;
-  }
-  #about__inner--end {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
-  }
-  .about__inner--end-box {
-    width: 30%;
-  }
-  #about-photo-clothes {
-    width: 80%;
-    margin-top: 200px;
-    margin-left: 50px;
-  }
-  #about-photo-girl {
-    width: 100%;
-  }
-  #about-photo-pen {
-    width: 70%;
-    margin-top: 180px;
-    margin-left: 30px;
-  }
-  /* 制作 */
+}
 
-  .production-img {
-    display: flex;
-    justify-content: space-around;
+.main-photo-knit {
+  width: 70%;
+}
+.main-photo-knit img {
+  width: 100%;
+  animation-name: fadeRightAnime;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
   }
-  /* ーーーーーーーー */
-  /* 不具合 */
-  /* ーーーーーーーー */
-  .production-photo img ::before {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.index-h2 {
+  font-size: 36px;
+  margin-top: 150px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 30px;
+  line-height: 2.5rem;
+}
+#about__inner--top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.about-text {
+  width: 40%;
+}
+.about-photo {
+  width: 60%;
+}
+#about-photo-seep {
+  width: 50%;
+  margin-top: 50px;
+}
+#about-photo-knit {
+  width: 70%;
+  margin-left: 80px;
+}
+#about__inner--end {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.about__inner--end-box {
+  width: 30%;
+}
+#about-photo-clothes {
+  width: 80%;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+#about-photo-girl {
+  width: 100%;
+}
+#about-photo-pen {
+  width: 70%;
+  margin-top: 180px;
+  margin-left: 30px;
+}
+/* 制作 */
+
+.production-img {
+  display: flex;
+  justify-content: space-around;
+}
+/* ーーーーーーーー */
+/* 不具合 */
+/* ーーーーーーーー */
+.production-photo img ::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.production-photo img :hover ::before {
+  opacity: 0.5;
+}
+
+#production-clothes,
+#production-knit {
+  margin-top: 50px;
+}
+/* 展示会 */
+.exhibition-photo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.exhibition-photo1 {
+  position: relative;
+
+  text-align: center;
+}
+.ex-photo_trim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* お問い合わせ */
+#contact {
+  margin: 80px auto;
+}
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+/* 個人情報の取り扱い */
+details {
+  width: 700px;
+}
+details > div {
+  background-color: #fafafa;
+  padding: 20px;
+}
+details > div > span {
+  font-weight: bold;
+}
+/* フッター */
+footer {
+  background-color: #ccc;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+#footer-logo img {
+  width: 10%;
+  margin-bottom: 20px;
+}
+#footer-link {
+  margin-bottom: 50px;
+}
+#footer-link > a {
+  text-decoration: none;
+  margin: 10px;
+}
+#footer-link > a:link {
+  color: #fff;
+}
+#footer-link > a:visited {
+  color: #fff;
+}
+#footer-link > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#footer-link > a:active {
+  color: #fff;
+}
+#sns-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#sns-footer {
+  text-align: left;
+  width: 100%;
+}
+#sns-footer > a {
+  margin-right: 30px;
+}
+#copyright {
+  color: #fff;
+  width: 100%;
+}
+
+td,
+th {
+  line-height: 2.5rem;
+  padding-left: 30px;
+}
+
+/* モーダル ボタン*/
+.button {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+  background-color: #fff;
+  border: none;
+  /* background-image: url(images/modal.gif); */
+}
+.button img {
+}
+/* グレー背景 */
+.layer {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 追記 */
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  /* 追記　ふわっと */
+  transition: opacity 1s linear, visibility 1s linear, z-index 1s linear;
+}
+/* モーダルコンテンツ */
+.modal {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  min-width: 440px;
+  /* 追記 */
+  opacity: 0;
+  visibility: hidden;
+  /* 追記　ふわっと */
+  transition: visibility.7s linear, opacity 0.7s linear;
+}
+.modal__inner {
+  margin-top: 125px;
+  margin-bottom: 125px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  /* モーダルの角を丸める */
+  border-radius: 13px;
+  display: block;
+  padding: 21px 8px;
+  height: auto;
+}
+
+.modal__content {
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal__button-wrap {
+  position: absolute;
+  right: 10px;
+  top: -28px;
+  display: inline-flex;
+}
+.close-button {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  background: #000;
+  border-radius: 50%;
+  padding: 0;
+  border: transparent;
+  cursor: pointer;
+}
+
+.close-button span {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: 50%;
+  border-radius: 20px;
+}
+
+.close-button span:nth-child(1) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.close-button span:nth-child(2) {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.layer.is-open {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.layer.is-open .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 展示会２０２２HTML */
+.ex-logo {
+  width: 100%;
+  margin-top: 150px;
+}
+.ex-logo h1 {
+  font-size: 36px;
+}
+.ex-logo img {
+  width: 5%;
+  margin: 20px;
+}
+.ex-photo {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.ex-photo img {
+  width: 100%;
+}
+/* } */
+@media screen and (max-width: 767px) {
+  header {
     background-color: #fff;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: 1;
-  }
-  .production-photo img :hover ::before {
-    opacity: 0.5;
-  }
-
-  #production-clothes,
-  #production-knit {
-    margin-top: 50px;
-  }
-  /* 展示会 */
-  .exhibition-photo {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-  }
-  .exhibition-photo1 {
-    position: relative;
-
-    text-align: center;
-  }
-  .ex-photo_trim {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .company-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-  /* お問い合わせ */
-  #contact {
-    margin: 80px auto;
-  }
-  /* 外枠 */
-  #contact > form > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-  }
-  /* 左列の見出し */
-  .contact-heading {
-    width: 240px;
-    align-self: center;
-  }
-  /* 見出しのラベル */
-  .contact-label {
-    font-weight: bold;
-  }
-  /* 必須 */
-  .contact-span {
-    color: #ce2222;
-    margin: 0 0 0 20px;
-    font-weight: bold;
-  }
-  /* テキストボックス */
-  .contact-textbox {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: #707070;
-    border-bottom-style: solid;
-    background-color: #fafafa;
-    width: 400px;
-    height: 56px;
-  }
-  /* お問い合わせ内容のテキストエリア */
-  .contact-textarea {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: #707070;
-    border-bottom-style: solid;
-    background-color: #fafafa;
-    width: 400px;
-    height: 200px;
-  }
-  /* 個人情報の取り扱い */
-  details {
-    width: 700px;
-  }
-  details > div {
-    background-color: #fafafa;
     padding: 20px;
-  }
-  details > div > span {
-    font-weight: bold;
-  }
-  /* フッター */
-  footer {
-    background-color: #ccc;
-    text-align: center;
-    padding: 80px 80px 30px 80px;
-  }
-  #footer-logo img {
-    width: 10%;
-    margin-bottom: 20px;
-  }
-  #footer-link {
-    margin-bottom: 50px;
-  }
-  #footer-link > a {
-    text-decoration: none;
-    margin: 10px;
-  }
-  #footer-link > a:link {
-    color: #fff;
-  }
-  #footer-link > a:visited {
-    color: #fff;
-  }
-  #footer-link > a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  #footer-link > a:active {
-    color: #fff;
-  }
-  #sns-copyright {
-    display: flex;
-    justify-content: space-between;
-  }
-  #sns-footer {
-    text-align: left;
-    width: 100%;
-  }
-  #sns-footer > a {
-    margin-right: 30px;
-  }
-  #copyright {
-    color: #fff;
-    width: 100%;
-  }
-
-  td,
-  th {
-    line-height: 2.5rem;
-    padding-left: 30px;
-  }
-
-  /* モーダル ボタン*/
-  .button {
-    display: block;
-    cursor: pointer;
-    margin: 0;
-    background-color: #fff;
-    border: none;
-    /* background-image: url(images/modal.gif); */
-  }
-  .button img {
-  }
-  /* グレー背景 */
-  .layer {
-    background: rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    /* 追記 */
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    /* 追記　ふわっと */
-    transition: opacity 1s linear, visibility 1s linear, z-index 1s linear;
-  }
-  /* モーダルコンテンツ */
-  .modal {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-    min-width: 440px;
-    /* 追記 */
-    opacity: 0;
-    visibility: hidden;
-    /* 追記　ふわっと */
-    transition: visibility.7s linear, opacity 0.7s linear;
-  }
-  .modal__inner {
-    margin-top: 125px;
-    margin-bottom: 125px;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    background: #fff;
-    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
-    /* モーダルの角を丸める */
-    border-radius: 13px;
-    display: block;
-    padding: 21px 8px;
-    height: auto;
-  }
-
-  .modal__content {
-    padding: 20px;
-    gap: 10px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .modal__button-wrap {
-    position: absolute;
-    right: 10px;
-    top: -28px;
-    display: inline-flex;
-  }
-  .close-button {
-    position: relative;
-    width: 39px;
-    height: 39px;
-    background: #000;
-    border-radius: 50%;
-    padding: 0;
-    border: transparent;
-    cursor: pointer;
-  }
-
-  .close-button span {
-    width: 25px;
-    height: 2px;
-    background: #fff;
-    display: inline-block;
-    position: absolute;
-    left: calc(50% - 12px);
-    top: 50%;
-    border-radius: 20px;
-  }
-
-  .close-button span:nth-child(1) {
-    transform: rotate(45deg) translate(-1px, -1px);
-  }
-  .close-button span:nth-child(2) {
-    transform: rotate(-45deg) translate(1px, -1px);
-  }
-
-  .layer.is-open {
-    z-index: 999;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .layer.is-open .modal {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* 展示会２０２２HTML */
-  .ex-logo {
     width: 100%;
-    margin-top: 150px;
-  }
-  .ex-logo h1 {
-    font-size: 36px;
-  }
-  .ex-logo img {
-    width: 5%;
-    margin: 20px;
-  }
-  .ex-photo {
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-  }
-  .ex-photo img {
-    width: 100%;
+    z-index: 100;
   }
 }
