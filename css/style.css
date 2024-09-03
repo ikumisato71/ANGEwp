@@ -53,6 +53,7 @@ header {
 
   .switch_image img {
     transition: opacity 0.5s;
+    width: 50%;
   }
   .switch_image:hover img:first-of-type {
     opacity: 0;
@@ -66,9 +67,8 @@ header {
   .switch_image:hover img:last-of-type {
     opacity: 1;
   }
-  .switch_image img {
-    width: 50%;
-  } */
+  
+   */
 #logo {
   width: 30%;
   padding: 10px;
@@ -78,7 +78,7 @@ header {
   cursor: pointer;
 }
 #logo img {
-  width: 50%;
+  width: 40%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -545,7 +545,31 @@ th {
   opacity: 1;
   visibility: visible;
 }
-
+/* ホーム展示会 */
+/* 9.4質問 ホバー時に画像白くしたのですが、リンクしなくなりました*/
+.ex-photo_white {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+}
+.ex-photo_white img {
+  position: relative;
+  z-index: -1;
+}
+.ex-photo_white::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+.ex-photo_white:hover::before {
+  opacity: 0.5;
+}
 /* 展示会２０２２HTML */
 .ex-logo {
   width: 100%;
@@ -567,7 +591,7 @@ th {
 .ex-photo img {
   width: 100%;
 }
-/* } */
+
 @media screen and (max-width: 767px) {
   header {
     background-color: #fff;
