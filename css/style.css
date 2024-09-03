@@ -549,14 +549,14 @@ th {
 /* 9.4質問 ホバー時に画像白くしたのですが、リンクしなくなりました*/
 .ex-photo_white {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   pointer-events: auto;
 }
 .ex-photo_white img {
   position: relative;
-  z-index: -1;
+  z-index: 2;
 }
-.ex-photo_white::before {
+.ex-photo_white img::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -565,9 +565,9 @@ th {
   width: 100%;
   height: 100%;
   content: "";
-  z-index: -1;
+  z-index: 2;
 }
-.ex-photo_white:hover::before {
+.ex-photo_white:hover img::before {
   opacity: 0.5;
 }
 /* 展示会２０２２HTML */
@@ -585,11 +585,13 @@ th {
 .ex-photo {
   width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 30px;
+  padding: 30px;
 }
 .ex-photo img {
-  width: 100%;
+  width: 20%;
 }
 
 @media screen and (max-width: 767px) {
