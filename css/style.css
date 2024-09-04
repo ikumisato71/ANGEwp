@@ -115,7 +115,7 @@ header {
 /* 親要素にdisplay: flex;をつけてあげるとgapが効くようになります */
 nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 #nav-pc a {
@@ -389,7 +389,7 @@ details > div > span {
 }
 /* フッター */
 footer {
-  background-color: #ccc;
+  background-color: #ded5c3;
   text-align: center;
   padding: 80px 80px 30px 80px;
 }
@@ -405,10 +405,10 @@ footer {
   margin: 10px;
 }
 #footer-link > a:link {
-  color: #fff;
+  color: #000;
 }
 #footer-link > a:visited {
-  color: #fff;
+  color: #000;
 }
 #footer-link > a:hover {
   color: #fff;
@@ -429,7 +429,7 @@ footer {
   margin-right: 30px;
 }
 #copyright {
-  color: #fff;
+  color: #000;
   width: 100%;
 }
 
@@ -497,6 +497,8 @@ th {
   padding: 20px;
   gap: 10px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
