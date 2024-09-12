@@ -3,14 +3,46 @@ body {
   font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
     "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo",
     "MS Ｐゴシック", "MS PGothic", Sans-Serif;
+  max-width: 1340px;
+  min-width: 960px;
+  margin: 0 auto;
+  position: relative;
 }
+a {
+  transition: opacity 0.3s;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 p {
   font-size: 15px;
   margin: 20px;
   line-height: 1.8rem;
 }
+.index-h2 {
+  font-size: 36px;
+  margin-top: 150px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 30px;
+  line-height: 2.5rem;
+}
 /* PC用スタイル */
 /* @media screen and (min-width: 768px) { */
+/* ----------------------
+  ローディングアニメーション 
+   ---------------------- */
 .loader {
   position: fixed;
   width: 100%;
@@ -25,13 +57,10 @@ p {
 .loading_logo img {
   width: 200px;
 }
+/* ----------------------
+  ヘッダー
+   ---------------------- */
 
-body {
-  max-width: 1080px;
-  min-width: 960px;
-  margin: 0 auto;
-  position: relative;
-}
 header {
   background-color: #fff;
   position: absolute;
@@ -44,36 +73,10 @@ header {
   width: 100%;
   z-index: 100;
 }
-/* ーーーーーーーー */
-/* 不具合 */
-/* ーーーーーーーー */
-/* .switch_image {
-    position: relative;
-  }
-
-  .switch_image img {
-    transition: opacity 0.5s;
-    width: 50%;
-  }
-  .switch_image:hover img:first-of-type {
-    opacity: 0;
-  }
-  .switch_image img:last-of-type {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-  }
-  .switch_image:hover img:last-of-type {
-    opacity: 1;
-  }
-  
-   */
 #logo {
   width: 30%;
   padding: 10px;
   position: relative;
-  display: block;
   overflow: hidden;
   cursor: pointer;
 }
@@ -115,7 +118,8 @@ header {
 /* 親要素にdisplay: flex;をつけてあげるとgapが効くようになります */
 nav {
   display: flex;
-  gap: 30px;
+  gap: 50px;
+  width: 100%;
 }
 
 #nav-pc a {
@@ -137,6 +141,10 @@ nav {
 #nav-pc a:active {
   color: #0d0d0d;
 }
+/* ----------------------
+  メインビジュアル
+   ---------------------- */
+
 main {
   margin-top: 200px;
 }
@@ -226,16 +234,10 @@ main {
     transform: translateX(0);
   }
 }
-.index-h2 {
-  font-size: 36px;
-  margin-top: 150px;
-}
+/* ----------------------
+  アバウトアス
+   ---------------------- */
 
-h3 {
-  font-size: 24px;
-  margin: 30px;
-  line-height: 2.5rem;
-}
 #about__inner--top {
   display: flex;
   justify-content: space-between;
@@ -276,27 +278,16 @@ h3 {
   margin-top: 180px;
   margin-left: 30px;
 }
-/* 制作 */
+/* ----------------------
+プロダクション
+---------------------- */
 
 .production-img {
   display: flex;
   justify-content: space-around;
 }
-/* ーーーーーーーー */
-/* 不具合 */
-/* ーーーーーーーー */
-.production-photo img ::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  z-index: 1;
-}
-.production-photo img :hover ::before {
+
+.production-photo img :hover {
   opacity: 0.5;
 }
 
@@ -304,141 +295,6 @@ h3 {
 #production-knit {
   margin-top: 50px;
 }
-/* 展示会 */
-.exhibition-photo {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-.exhibition-photo1 {
-  position: relative;
-
-  text-align: center;
-}
-.ex-photo_trim {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.company-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-/* お問い合わせ */
-#contact {
-  margin: 80px auto;
-}
-/* 外枠 */
-#contact > form > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 30px;
-}
-/* 左列の見出し */
-.contact-heading {
-  width: 240px;
-  align-self: center;
-}
-/* 見出しのラベル */
-.contact-label {
-  font-weight: bold;
-}
-/* 必須 */
-.contact-span {
-  color: #ce2222;
-  margin: 0 0 0 20px;
-  font-weight: bold;
-}
-/* テキストボックス */
-.contact-textbox {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom-width: 1px;
-  border-bottom-color: #707070;
-  border-bottom-style: solid;
-  background-color: #fafafa;
-  width: 400px;
-  height: 56px;
-}
-/* お問い合わせ内容のテキストエリア */
-.contact-textarea {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom-width: 1px;
-  border-bottom-color: #707070;
-  border-bottom-style: solid;
-  background-color: #fafafa;
-  width: 400px;
-  height: 200px;
-}
-/* 個人情報の取り扱い */
-details {
-  width: 700px;
-}
-details > div {
-  background-color: #fafafa;
-  padding: 20px;
-}
-details > div > span {
-  font-weight: bold;
-}
-/* フッター */
-footer {
-  background-color: #ded5c3;
-  text-align: center;
-  padding: 80px 80px 30px 80px;
-}
-#footer-logo img {
-  width: 10%;
-  margin-bottom: 20px;
-}
-#footer-link {
-  margin-bottom: 50px;
-}
-#footer-link > a {
-  text-decoration: none;
-  margin: 10px;
-}
-#footer-link > a:link {
-  color: #000;
-}
-#footer-link > a:visited {
-  color: #000;
-}
-#footer-link > a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-#footer-link > a:active {
-  color: #fff;
-}
-#sns-copyright {
-  display: flex;
-  justify-content: space-between;
-}
-#sns-footer {
-  text-align: left;
-  width: 100%;
-}
-#sns-footer > a {
-  margin-right: 30px;
-}
-#copyright {
-  color: #000;
-  width: 100%;
-}
-
-td,
-th {
-  line-height: 2.5rem;
-  padding-left: 30px;
-}
-
 /* モーダル ボタン*/
 .button {
   display: block;
@@ -463,7 +319,7 @@ th {
   opacity: 0;
   visibility: hidden;
   /* 追記　ふわっと */
-  transition: opacity 1s linear, visibility 1s linear, z-index 1s linear;
+  transition: opacity 0.3s linear, visibility 1s linear, z-index 1s linear;
 }
 /* モーダルコンテンツ */
 .modal {
@@ -547,6 +403,147 @@ th {
   opacity: 1;
   visibility: visible;
 }
+/* ----------------------
+展示会
+   ---------------------- */
+.exhibition-photo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.exhibition-photo1 {
+  position: relative;
+
+  text-align: center;
+}
+.ex-photo_trim {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* お問い合わせ */
+#contact {
+  margin: 80px auto;
+}
+/* 外枠 */
+#contact > form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+/* 個人情報の取り扱い */
+details {
+  width: 700px;
+}
+details > div {
+  background-color: #fafafa;
+  padding: 20px;
+}
+details > div > span {
+  font-weight: bold;
+}
+/* ----------------------
+  フッター
+   ---------------------- */
+footer {
+  background-color: #ded5c3;
+  display: flex;
+  text-align: center;
+}
+
+#footer-logo img {
+  width: 10%;
+  margin-bottom: 20px;
+}
+#footer-link {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+#footer-link > a {
+  text-decoration: none;
+  margin: 10px;
+}
+#footer-link > a:link {
+  color: #000;
+}
+#footer-link > a:visited {
+  color: #000;
+}
+#footer-link > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#footer-link > a:active {
+  color: #fff;
+}
+#sns-copyright {
+  display: flex;
+  justify-content: space-between;
+}
+#sns-footer {
+  text-align: left;
+  width: 20%;
+}
+#sns-footer > a {
+  margin-right: 30px;
+}
+#copyright {
+  color: #000;
+  width: 100%;
+}
+
+td,
+th {
+  line-height: 2.5rem;
+  padding-left: 30px;
+}
+
 /* ホーム展示会 */
 /* 9.4質問 ホバー時に画像白くしたのですが、リンクしなくなりました*/
 .ex-photo_white {
