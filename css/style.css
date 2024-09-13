@@ -35,7 +35,7 @@ p {
 
 h3 {
   font-size: 24px;
-  margin: 30px;
+  margin: 30px 20px;
   line-height: 2.5rem;
 }
 /* PC用スタイル */
@@ -335,7 +335,7 @@ main {
   transition: visibility.7s linear, opacity 0.7s linear;
 }
 .modal__inner {
-  margin-top: 125px;
+  margin-top: 100px;
   margin-bottom: 125px;
   position: relative;
   margin-right: auto;
@@ -541,15 +541,26 @@ details > div > span {
   font-weight: bold;
   padding: 10px;
   cursor: pointer;
-  text-align: center;
   background-color: #c1c1c0d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-top .material-icons-outlined {
   vertical-align: bottom;
-  color: #fff;
+  /* color: #fff; */
 }
+/* 矢印 */
 
+.arrow {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
 /* ----------------------
   フッター
    ---------------------- */
