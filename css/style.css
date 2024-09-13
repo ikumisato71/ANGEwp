@@ -435,6 +435,48 @@ COMPANY
 #contact {
   margin: 80px auto;
 }
+.contact-btn {
+  width: 50%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+  font-size: 18px;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background: #000;
+}
+.index-h2-contact {
+  font-size: 36px;
+  margin-top: 150px;
+  /* 左右いっぱいに伸びた横線 */
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+}
+.index-h2-contact::before,
+.index-h2-contact::after {
+  background-color: #1c1c1d; /* 横線の色 */
+  border-radius: 1px; /* 横線の両端を丸く */
+  content: "";
+  flex-grow: 1; /* 横幅いっぱい */
+  height: 1px; /* 横線の高さ */
+}
+.index-h2-contact::before {
+  margin-right: 15px; /* 文字との余白 */
+}
+.index-h2-contact::after {
+  margin-left: 15px; /* 文字との余白 */
+}
+.index-h3-contact {
+  text-align: center;
+}
 /* 外枠 */
 #contact > form > div {
   display: flex;
