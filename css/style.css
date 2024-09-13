@@ -282,18 +282,15 @@ main {
 プロダクション
 ---------------------- */
 
-.production-img {
+.production-img-wrapper {
   display: flex;
   justify-content: space-around;
-}
-
-.production-photo img :hover {
-  opacity: 0.5;
+  margin-top: 80px;
 }
 
 #production-clothes,
 #production-knit {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 /* モーダル ボタン*/
 .button {
@@ -302,13 +299,13 @@ main {
   margin: 0;
   background-color: #fff;
   border: none;
-  /* background-image: url(images/modal.gif); */
 }
-.button img {
+.button :hover {
+  opacity: 0.7;
 }
 /* グレー背景 */
 .layer {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: fixed;
@@ -349,13 +346,14 @@ main {
   height: auto;
 }
 
-.modal__content {
+.modal__contents {
   padding: 20px;
-  gap: 10px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__content {
+  width: 50%;
 }
 
 .modal__button-wrap {
@@ -405,29 +403,32 @@ main {
 }
 /* ----------------------
 展示会
-   ---------------------- */
-.exhibition-photo {
+---------------------- */
+.exhibition-photo-wrapper {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
 }
-.exhibition-photo1 {
+.ex-photo_home {
   position: relative;
-
-  text-align: center;
-}
-.ex-photo_trim {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* pointer-events: auto; */
+  cursor: pointer;
 }
 
+.ex-photo_home :hover {
+  opacity: 0.7;
+}
+
+/* ----------------------
+COMPANY
+---------------------- */
 .company-wrapper {
   display: flex;
   justify-content: space-between;
 }
-/* お問い合わせ */
+/* ----------------------
+お問い合わせ
+---------------------- */
 #contact {
   margin: 80px auto;
 }
@@ -544,31 +545,6 @@ th {
   padding-left: 30px;
 }
 
-/* ホーム展示会 */
-/* 9.4質問 ホバー時に画像白くしたのですが、リンクしなくなりました*/
-.ex-photo_white {
-  position: relative;
-  z-index: 1;
-  pointer-events: auto;
-}
-.ex-photo_white img {
-  position: relative;
-  z-index: 2;
-}
-.ex-photo_white img::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-.ex-photo_white:hover img::before {
-  opacity: 0.5;
-}
 /* 展示会２０２２HTML */
 .ex-logo {
   width: 100%;
@@ -592,7 +568,9 @@ th {
 .ex-photo img {
   width: 20%;
 }
-
+/* ----------------------
+  スマホ
+   ---------------------- */
 @media screen and (max-width: 767px) {
   header {
     background-color: #fff;
