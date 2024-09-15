@@ -319,7 +319,7 @@ main {
   opacity: 0;
   visibility: hidden;
   /* 追記　ふわっと */
-  transition: opacity 0.3s linear, visibility 1s linear, z-index 1s linear;
+  transition: opacity 0.3s linear, visibility 0.3s linear, z-index 0.3s linear;
 }
 /* モーダルコンテンツ */
 .modal {
@@ -332,7 +332,7 @@ main {
   opacity: 0;
   visibility: hidden;
   /* 追記　ふわっと */
-  transition: visibility.7s linear, opacity 0.7s linear;
+  transition: visibility0.3s linear, opacity 0.3s linear;
 }
 .modal__inner {
   margin-top: 100px;
@@ -551,8 +551,8 @@ details > div > span {
   vertical-align: bottom;
   /* color: #fff; */
 }
-/* 矢印 */
 
+/* 矢印 */
 .arrow {
   width: 15px;
   height: 15px;
@@ -643,16 +643,70 @@ th {
   スマホ
    ---------------------- */
 @media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+  }
+  main {
+    margin-top: 100px;
+  }
   header {
-    background-color: #fff;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    min-width: 375px;
+  }
+  article {
+    padding: 15px;
+  }
+  #main-visual {
+    display: block;
+  }
+  #main-massage {
     width: 100%;
-    z-index: 100;
+  }
+  .main-photo-knit {
+    width: 100%;
+  }
+  #main-massage > img {
+    width: 35%;
+    position: static;
+  }
+  .about-text {
+    width: 100%;
+  }
+  #about__inner--top {
+    display: block;
+  }
+  #about__inner--end {
+    display: block;
+    width: 100%;
+  }
+  .about__inner--end-box {
+    width: 100%;
+  }
+  #about-photo-pen {
+    margin: 50px;
+  }
+  #about-photo-clothes {
+    margin: 0 auto;
+  }
+  #about-photo-knit {
+    margin: 80px;
+  }
+  .company-wrapper {
+    display: block;
+  }
+  #footer-link {
+    display: block;
+  }
+  td,
+  th {
+    line-height: 1.8rem;
+    padding: 5px;
+  }
+  .contact-btn {
+    width: 100%;
+  }
+  #footer-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
