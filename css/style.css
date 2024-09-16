@@ -12,7 +12,6 @@ a {
   transition: opacity 0.3s;
   text-decoration: none;
   display: block;
-  width: 100%;
   height: auto;
 }
 
@@ -62,8 +61,6 @@ h3 {
    ---------------------- */
 
 header {
-  max-width: 1080px;
-  min-width: 960px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -149,6 +146,8 @@ nav {
    ---------------------- */
 
 main {
+  max-width: 1080px;
+  min-width: 960px;
   margin-top: 200px;
 }
 #main-visual {
@@ -480,9 +479,7 @@ COMPANY
 /*--------------------------------
  お問い合わせ　下層
 ---------------------------------*/
-form {
-  margin-top: 200px;
-}
+
 /* 外枠 */
 #contact > form > div {
   display: flex;
@@ -531,9 +528,10 @@ form {
   height: 300px;
   margin-bottom: 30px;
 }
-input :focus,
-textarea :focus {
-  background-color: #4b4343;
+input:focus,
+textarea:focus {
+  background-color: #e3e0e0;
+  outline: none;
 }
 /* 個人情報の取り扱い */
 details {
