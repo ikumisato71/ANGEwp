@@ -3,11 +3,8 @@ body {
   font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
     "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo",
     "MS Ｐゴシック", "MS PGothic", Sans-Serif;
-  max-width: 1080px;
-  min-width: 960px;
-  margin: 0 auto;
-  position: relative;
 }
+
 a {
   transition: opacity 0.3s;
   text-decoration: none;
@@ -16,7 +13,6 @@ a {
 }
 
 img {
-  max-width: 100%;
   display: block;
   width: 100%;
   height: auto;
@@ -63,31 +59,31 @@ h3 {
 header {
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: center;
   position: fixed;
   top: 0;
-  margin: 0 auto;
   width: 100%;
   z-index: 100;
-  gap: 80px;
+  padding: 10px;
 }
+
 #logo {
-  width: 35%;
+  width: 40%;
   padding: 10px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 #logo img {
-  width: 50%;
+  width: 35%;
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left: 0%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  margin-left: 30px;
 }
 
 #logo img:first-of-type {
@@ -112,20 +108,18 @@ header {
 
 #nav-pc {
   font-size: 18px;
-  padding: 15px;
   width: 100%;
 }
 /* 親要素にdisplay: flex;をつけてあげるとgapが効くようになります */
 nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
 }
 
 #nav-pc a {
   text-decoration: none;
-  /* margin-left: 20px;
-		gap: 20px; */
+  padding: 20px;
 }
 
 #nav-pc a:link {
@@ -148,7 +142,7 @@ nav {
 main {
   max-width: 1080px;
   min-width: 960px;
-  margin-top: 200px;
+  margin: 200px auto;
 }
 #main-visual {
   display: flex;
@@ -286,13 +280,14 @@ main {
 
 .production-img-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   margin-top: 80px;
 }
 
 #production-clothes,
 #production-knit {
-  margin-top: 80px;
+  margin: 80px auto;
 }
 /* モーダル ボタン*/
 .button {
@@ -594,6 +589,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 #footer-logo img {
@@ -603,12 +599,12 @@ footer {
 
 #footer-link {
   display: flex;
-  margin: 20px;
+  gap: 40px;
+  justify-content: center;
 }
 #footer-link > a {
   text-decoration: none;
-  margin: 10px;
-  width: 15%;
+  padding: 20px;
 }
 #footer-link > a:link {
   color: #000;
