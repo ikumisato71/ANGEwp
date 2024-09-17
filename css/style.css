@@ -59,7 +59,7 @@ h3 {
 header {
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   width: 100%;
@@ -113,7 +113,7 @@ header {
 /* 親要素にdisplay: flex;をつけてあげるとgapが効くようになります */
 nav {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
 }
 
@@ -491,12 +491,6 @@ COMPANY
 .contact-label {
   font-weight: bold;
 }
-/* 必須 */
-/* .contact-span {
-  color: #ce2222;
-  margin: 0 0 0 20px;
-  font-weight: bold;
-} */
 /* テキストボックス */
 .contact-textbox {
   border-top: 0px;
@@ -525,7 +519,7 @@ COMPANY
 }
 input:focus,
 textarea:focus {
-  background-color: #e3e0e0;
+  background-color: #fafafa;
   outline: none;
 }
 /* 個人情報の取り扱い */
@@ -569,7 +563,6 @@ details > div > span {
 
 .page-top .material-icons-outlined {
   vertical-align: bottom;
-  /* color: #fff; */
 }
 
 /* 矢印 */
@@ -637,7 +630,7 @@ th {
   padding-left: 30px;
 }
 
-/* 展示会２０２２HTML */
+/* 展示会 下層　HTML */
 .ex-logo {
   width: 100%;
   margin-top: 150px;
