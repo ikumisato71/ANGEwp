@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-
-    <title>
-      ANGE（株式会社アンジュ） | 東京都渋谷区のアパレル製品の企画・生産・卸
-    </title>
-    <link rel="icon" href="images/tlogo.png">
-    <meta
-      name="description"
-      content="東京都渋谷区のアパレル製品の企画・生産・卸"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <!--ロゴ -->
-      <div id="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="トップページへ戻る" />
-          <img src="images/toplogo-ic.gif" alt="トップページへ戻る"/>
-        </a>
-      </div>
-            <!-- PC用ナビゲーション -->
-      <div id="nav-pc">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="index.html#about-top">About us</a>
-          <a href="index.html#production-knit">Production</a>
-          <a href="index.html#exhibition">Exhibition</a>
-          <a href="index.html#company">Company</a>
-          <a href="index.html#contact">Contact us</a>
-        </nav>
-      </div>
-    </header>
+<?php get_header();?>
       <main>
               <form>
             <h2 class="index-h2">お問い合わせ</h2></br>
@@ -191,46 +154,4 @@
             <input class="contact-btn_send" type="submit"></input>
           </form>
       </main>
-      <!-- トップへ戻る -->
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined arrow"></span>
-      </div>
-          <footer>
-
-            <div id="footer-logo">
-              <img src="images/logo.png" alt="ANGEロゴ" />
-              
-              <div id="footer-link">
-                <a href="index.html">Home</a>
-                <a href="index.html#about-top">About us</a>
-                <a href="index.html#production-knit">Production</a>
-                <a href="index.html#exhibition">Exhibition</a>
-                <a href="index.html#company">Company</a>
-                <a href="contactus.html">Contact us</a>
-              </div>
-    
-              <!-- <div id="sns-footer">
-                <a href=""
-                  ><img src="images/button-facebook.png" alt="Facebookのリンク"
-                /></a>
-                <a href=""
-                  ><img src="images/button-twitter.png" alt="Twitterのリンク"
-                /></a>
-                <a href=""
-                  ><img src="images/button-youtube.png" alt="youtubeのリンク"
-                /></a>
-              </div>
-     -->
-              <div id="copyright">
-                <span> &copy;2018 - 2024 ANGE, Inc. All Rights Resarved.</span>
-              </div>
-    
-            </div>
-    
-          </footer>
-    
-
-        <script src="js/move.js"></script>
-      </body>
-    </html>
-    
+      <?php get_footer(); ?>
