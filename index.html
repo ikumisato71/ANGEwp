@@ -41,6 +41,88 @@
           <a href="index.html#contact">Contact us</a>
         </nav>
       </div>
+
+      <!-- スマホ用メニューボタン -->
+      <div class="header__inner">
+        <button
+          id="js-hamburger"
+          type="button"
+          class="hamburger"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="メニューを開く"
+        >
+          <span class="hamburger__line"></span>
+          <span class="hamburger__text"></span>
+        </button>
+        <div class="header__nav-area js-nav-area" id="navigation">
+          <nav id="js-global-navigation" class="global-navigation">
+            <ul class="global-navigation__list">
+              <li>
+                <a href="index.html" class="global-navigation__link"> Home </a>
+              </li>
+              <li>
+                <a href="index.html#about-top" class="global-navigation__link">
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#production-knit"
+                  class="global-navigation__link"
+                >
+                  Production
+                </a>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="global-navigation__link -accordion js-sp-accordion-trigger"
+                  aria-expanded="false"
+                  aria-controls="accordion1"
+                >
+                  <a
+                    href="index.html#exhibition"
+                    class="global-navigation__link"
+                  >
+                    Exhibition</a
+                  >
+                </button>
+                <div id="accordion1" class="accordion js-accordion">
+                  <ul class="accordion__list">
+                    <li>
+                      <a href="exhibition2022.html" class="accordion__link">
+                        2022</a
+                      >
+                    </li>
+                    <li>
+                      <a href="exhibition2023.html" class="accordion__link">
+                        2023</a
+                      >
+                    </li>
+                    <li>
+                      <a href="exhibition2024.html" class="accordion__link">
+                        2024
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="index.html#company" class="global-navigation__link">
+                  Company
+                </a>
+              </li>
+              <li>
+                <a href="index.html#contact" class="global-navigation__link">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+            <div id="js-focus-trap" tabindex="0"></div>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
       <article>
