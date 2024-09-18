@@ -151,3 +151,13 @@ accordionTrigger.forEach((item) => {
 focusTrap.addEventListener("focus", (e) => {
   hamburger.focus();
 });
+
+// PC 展示会のアコーディオン
+const qa = document.querySelectorAll(".js-ac");
+console.log(qa);
+
+qa.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("is-open");
+  });
+});
