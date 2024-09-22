@@ -6,7 +6,7 @@
     <title>
       ANGE（株式会社アンジュ） | 東京都渋谷区のアパレル製品の企画・生産・卸
     </title>
-    <link rel="icon" href="images/tlogo.png" />
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/tlogo.png" />
     <meta
       name="description"
       content="東京都渋谷区のアパレル製品の企画・生産・卸"
