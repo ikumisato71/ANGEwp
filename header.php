@@ -34,7 +34,7 @@
           <!-- <img src="images/logo.png" alt="トップページへ戻る" />
           <img src="images/toplogo-ic.gif" alt="トップページへ戻る" /> -->
           <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="トップページへ戻る"  />
-          <img src="<?php echo get_template_directory_uri(); ?>/images/toplogo.png" alt="トップページへ戻る"  />
+          <img src="<?php echo get_template_directory_uri(); ?>/images/toplogo-ic.gif" alt="トップページへ戻る"  />
         </a>
       </div>
       <!-- PC用ナビゲーション -->
