@@ -406,7 +406,7 @@
           <h3 class="index-h3-contact">
             はじめての方もお気軽にご相談ください。
           </h3>
-          <a href="contactus.html" class="contact-btn"
+          <a href="<?php echo get_template_directory_uri(); ?>/contactus.php" class="contact-btn"
             >メールでのお問い合わせはこちら</a
           >
         </section>

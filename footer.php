@@ -9,17 +9,17 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="ANGEロゴ" />
         <div id="footer-link">
           <!-- <a href="index.html">Home</a> -->
-          <a href="<?php echo home_url(); ?>/home">Home</a>
+          <a href="#home">Home</a>
           <!-- <a href="index.html#about-top">About us</a> -->
-          <a href="<?php echo home_url(); ?>/about_us">About us</a>
+          <a href="#about-top">About us</a>
           <!-- <a href="index.html#production-knit">Production</a> -->
-          <a href="<?php echo home_url(); ?>/production">Production</a>
+          <a href="#production">Production</a>
           <!-- <a href="index.html#exhibition">Exhibition</a> -->
-          <a href="<?php echo home_url(); ?>/exhibition">Exhibition</a>
+          <a href="#exhibition">Exhibition</a>
           <!-- <a href="index.html#company">Company</a> -->
-          <a href="<?php echo home_url(); ?>/company">Company</a>
+          <a href="#company">Company</a>
           <!-- <a href="contactus.html">Contact us</a> -->
-          <a href="<?php echo home_url(); ?>/Contact_us">Contact us</a>
+          <a href="<#contact">Contact us</a>
         </div>
 
         <!-- <div id="sns-footer">

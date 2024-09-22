@@ -41,30 +41,30 @@
       <div id="nav-pc">
         <nav>
           <!-- <a href="index.html">Home</a> -->
-          <a href="<?php echo home_url(); ?>/home">Home</a>
+          <a href="<?php echo home_url(); ?>">Home</a>
           <!-- <a href="index.html#about-top">About us</a> -->
-          <a href="<?php echo home_url(); ?>/about_us">About us</a>
+          <a href="#about-top">About us</a>
 
-          <a href="index.html#production-knit">Production</a>
+          <a href="#production-knit">Production</a>
           <div class="qa">
             <ul class="qa__block">
               <li class="qa__item js-ac">
                 <!-- <a href="index.html#exhibition" class="qa__head">Exhibition</a> -->
-                <a class="qa__head" href="<?php echo home_url(); ?>/exhibition">Exhibition</a>
+                <a class="qa__head" href="#exhibition">Exhibition</a>
                 <div class="qa__body">
                   <ul>
                     <li class="qa__link">
                       <!-- <a href="exhibition2022.html">2022</a> -->
-                      <a href="<?php echo home_url(); ?>/exhibition2022">2022</a>
+                      <a href="<?php echo get_template_directory_uri('/exhibition2022.php'); ?>">2022</a>
                     </li>
                     <li class="qa__link">
                       <!-- <a href="exhibition2023.html">2023 </a> -->
-                      <a href="<?php echo home_url(); ?>/exhibition2023">2023</a>
+                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2023.php">2023</a>
 
                     </li>
                     <li class="qa__link">
                       <!-- <a href="exhibition2024.html">2024 </a> -->
-                      <a href="<?php echo home_url(); ?>/exhibition2024">2024</a>
+                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2024.php">2024</a>
                     </li>
                   </ul>
                 </div>
@@ -72,9 +72,9 @@
             </ul>
           </div>
           <!-- <a href="index.html#company">Company</a> -->
-          <a href="<?php echo home_url(); ?>/company">Company</a>
+          <a href="#company">Company</a>
           <!-- <a href="index.html#contact">Contact us</a> -->
-          <a href="<?php echo home_url(); ?>/contact_us">Contact us</a>
+          <a href="#contact">Contact us</a>
         </nav>
       </div>
 
@@ -98,13 +98,13 @@
                 <a href="index.html" class="global-navigation__link"> Home </a>
               </li>
               <li>
-                <a href="index.html#about-top" class="global-navigation__link">
+                <a href="#about-top" class="global-navigation__link">
                   About us
                 </a>
               </li>
               <li>
                 <a
-                  href="index.html#production-knit"
+                  href="#production-knit"
                   class="global-navigation__link"
                 >
                   Production
@@ -118,7 +118,7 @@
                   aria-controls="accordion1"
                 >
                   <a
-                    href="index.html#exhibition"
+                    href="#exhibition"
                     class="global-navigation__link"
                   >
                     Exhibition</a
@@ -127,17 +127,17 @@
                 <div id="accordion1" class="accordion js-accordion">
                   <ul class="accordion__list">
                     <li>
-                      <a href="exhibition2022.html" class="accordion__link">
+                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2022.php" class="accordion__link">
                         2022</a
                       >
                     </li>
                     <li>
-                      <a href="exhibition2023.html" class="accordion__link">
+                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2023.php" class="accordion__link">
                         2023</a
                       >
                     </li>
                     <li>
-                      <a href="exhibition2024.html" class="accordion__link">
+                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2024.php" class="accordion__link">
                         2024
                       </a>
                     </li>
@@ -145,12 +145,12 @@
                 </div>
               </li>
               <li>
-                <a href="index.html#company" class="global-navigation__link">
+                <a href="#company" class="global-navigation__link">
                   Company
                 </a>
               </li>
               <li>
-                <a href="index.html#contact" class="global-navigation__link">
+                <a href="#contact" class="global-navigation__link">
                   Contact us
                 </a>
               </li>
