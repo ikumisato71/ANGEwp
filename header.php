@@ -55,16 +55,16 @@
                   <ul>
                     <li class="qa__link">
                       <!-- <a href="exhibition2022.html">2022</a> -->
-                      <a href="<?php echo get_template_directory_uri('/exhibition2022.php'); ?>">2022</a>
+                      <a href="<?php echo home_url(); ?>/2022-2">2022</a>
                     </li>
                     <li class="qa__link">
                       <!-- <a href="exhibition2023.html">2023 </a> -->
-                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2023.php">2023</a>
+                      <a href="<?php echo home_url(); ?>/2023-2">2023</a>
 
                     </li>
                     <li class="qa__link">
                       <!-- <a href="exhibition2024.html">2024 </a> -->
-                      <a href="<?php echo get_template_directory_uri(); ?>/exhibition2024.php">2024</a>
+                      <a href="<?php echo home_url(); ?>/2024-2">2024</a>
                     </li>
                   </ul>
                 </div>
@@ -74,7 +74,7 @@
           <!-- <a href="index.html#company">Company</a> -->
           <a href="#company">Company</a>
           <!-- <a href="index.html#contact">Contact us</a> -->
-          <a href="#contact">Contact us</a>
+          <a href="<?php echo home_url(); ?>/contactus">Contact us</a>
         </nav>
       </div>
 

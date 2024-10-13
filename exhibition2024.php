@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: 2024
+
+*/
+?>
 <?php get_header();?>
     <main>
       <div class="ex-logo">
