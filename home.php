@@ -328,7 +328,7 @@
           <h2 class="index-h2">EXHIBITION</h2>
           <div class="exhibition-photo-wrapper">
             <div class="ex-photo_home">
-              <a href="exhibition2022.html">
+            <a href="<?php echo home_url(); ?>/2022-2">
                 <img
                   class="exhibition-photo1"
                   src="<?php echo get_template_directory_uri(); ?>/images/ex1.png"
@@ -338,7 +338,7 @@
             </div>
 
             <div class="ex-photo_home">
-              <a href="exhibition2023.html">
+            <a href="<?php echo home_url(); ?>/2023-2">
                 <img
                   class="exhibition-photo2"
                   src="<?php echo get_template_directory_uri(); ?>/images/ex2.png"
@@ -348,7 +348,7 @@
             </div>
 
             <div class="ex-photo_home">
-              <a href="exhibition2024.html">
+            <a href="<?php echo home_url(); ?>/2024-2">
                 <img
                   class="exhibition-photo3"
                   src="<?php echo get_template_directory_uri(); ?>/images/ex3.png"
