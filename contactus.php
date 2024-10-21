@@ -1,20 +1,23 @@
 <?php
 /*
 Template Name: contactus
-
+Template Post Type:page
 */
 ?>
 <?php get_header();?>
       <main>
-              <form>
+      <form action="contact.php" method="POST">
+      
+        <input type="text" />
             <h2 class="index-h2">お問い合わせ</h2></br>
               <div class="contact-heading">
-                <label class="contact-label"
+                <label class="contact-label" for="name"
                 >お名前</label
                 >
               </div>
 
                 <input
+                  id="name" 
                   type="text"
                   name="name"
                   placeholder=""
@@ -35,12 +38,13 @@ Template Name: contactus
                 />
 
               <div class="contact-heading">
-                <label class="contact-label"
+                <label class="contact-label" for="email"
                   >メールアドレス</label
                 >
               </div>
 
                 <input
+                  id="email"
                   type="text"
                   name="email"
                   placeholder=""
@@ -59,12 +63,13 @@ Template Name: contactus
                 />
 
               <div class="contact-heading">
-                <label class="contact-label"
+                <label class="contact-label" for="message"
                   >お問い合わせ内容</label
                 >
               </div>
 
                 <textarea
+                  id="message"
                   class="contact-textarea"
                   placeholder=""
                   name="message"
@@ -157,7 +162,7 @@ Template Name: contactus
                 >
               </div>
       <!-- 送信 ボタン-->
-            <input class="contact-btn_send" type="submit"></input>
+      <button class="contact-btn_send" type="submit">送信</button>
           </form>
       </main>
       <?php get_footer(); ?>

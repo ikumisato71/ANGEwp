@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: 2024
-
+Template Post Type: post
 */
 ?>
 <?php get_header();?>
