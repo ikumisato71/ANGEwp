@@ -1,6 +1,7 @@
 /* PC,スマホ共通スタイル */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 body {
   font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
@@ -544,80 +545,16 @@ COMPANY
 /*--------------------------------
  お問い合わせ　下層
 ---------------------------------*/
-
-/* 外枠 */
-#contact > form > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 30px;
+.tab_panel_title {
+  font-size: 26px;
+  color: #1c1c1c;
 }
-/* 左列の見出し */
-.contact-heading {
-  width: 240px;
-  align-self: center;
-}
-/* 見出しのラベル */
-.contact-label {
-  font-weight: bold;
-}
-/* テキストボックス */
-.contact-textbox {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom-width: 1px;
-  border-bottom-color: #707070;
-  border-bottom-style: solid;
-  background-color: #fff;
-  width: 400px;
-  height: 70px;
+.contact_box {
+  margin-top: 100px;
+  width: 80%;
+  height: auto;
 }
 
-/* お問い合わせ内容のテキストエリア */
-.contact-textarea {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom-width: 1px;
-  border-bottom-color: #707070;
-  border-bottom-style: solid;
-  background-color: #fff;
-  width: 400px;
-  height: 300px;
-  margin-bottom: 30px;
-}
-input:focus,
-textarea:focus {
-  background-color: #fafafa;
-  outline: none;
-}
-/* 個人情報の取り扱い */
-details {
-  width: 700px;
-}
-details > div {
-  background-color: #fafafa;
-  padding: 20px;
-}
-details > div > span {
-  font-weight: bold;
-}
-.contact-btn_send {
-  width: 100px;
-  height: 50px;
-  margin: 50px auto;
-  text-align: center;
-  border: 2px solid #000;
-  border-radius: 5px;
-  background: #fff;
-  font-size: 18px;
-}
-
-.contact-btn_send:hover {
-  color: #fff;
-  background: #000;
-}
 /*--------------------------------
  ページトップへもどる
 ---------------------------------*/

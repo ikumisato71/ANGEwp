@@ -74,7 +74,7 @@
           <!-- <a href="index.html#company">Company</a> -->
           <a href="#company">Company</a>
           <!-- <a href="index.html#contact">Contact us</a> -->
-          <a href="<?php echo home_url(); ?>/contactus">Contact us</a>
+          <a href="<?php echo home_url(); ?>/contact">Contact us</a>
         </nav>
       </div>
 
