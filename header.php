@@ -43,14 +43,14 @@
           <!-- <a href="index.html">Home</a> -->
           <a href="<?php echo home_url(); ?>">Home</a>
           <!-- <a href="index.html#about-top">About us</a> -->
-          <a href="#about-top">About us</a>
+          <a href="<?php echo home_url(); ?>/#about-top">About us</a>
 
-          <a href="#production-knit">Production</a>
+          <a href="<?php echo home_url(); ?>/#production-knit">Production</a>
           <div class="qa">
             <ul class="qa__block">
               <li class="qa__item js-ac">
                 <!-- <a href="index.html#exhibition" class="qa__head">Exhibition</a> -->
-                <a class="qa__head" href="#exhibition">Exhibition</a>
+                <a class="qa__head" href="<?php echo home_url(); ?>/#exhibition">Exhibition</a>
                 <div class="qa__body">
                   <ul>
                     <li class="qa__link">
@@ -72,7 +72,7 @@
             </ul>
           </div>
           <!-- <a href="index.html#company">Company</a> -->
-          <a href="#company">Company</a>
+          <a href="<?php echo home_url(); ?>/#company">Company</a>
           <!-- <a href="index.html#contact">Contact us</a> -->
           <a href="<?php echo home_url(); ?>/contact">Contact us</a>
         </nav>
